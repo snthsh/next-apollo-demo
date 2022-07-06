@@ -1,3 +1,3 @@
 module.exports = {
-  TOTAL_PERSONS: 3,
+  TOTAL_PERSONS: 2000,
 };
