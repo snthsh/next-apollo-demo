@@ -14,14 +14,6 @@ const typeDefs = gql`
     ): PersonConnection!
   }
 
-  type Person {
-    id: ID!
-    name: String!
-    address: String
-    email: String
-    phoneNumber: String
-  }
-
   """
   Simple wrapper around list of persons that contains a cursor to the
   last item in the list.
@@ -30,6 +22,14 @@ const typeDefs = gql`
     cursor: String!
     hasMore: Boolean!
     persons: [Person]!
+  }
+
+  type Person {
+    id: ID!
+    name: String
+    address: String
+    email: String
+    phoneNumber: String
   }
 `;
 
