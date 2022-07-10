@@ -11,4 +11,7 @@ export interface PersonTile {
   __typename: "Person";
   id: string;
   name: string | null;
+  address: string | null;
+  email: string | null;
+  phoneNumber: string | null;
 }

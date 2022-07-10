@@ -11,6 +11,9 @@ export interface GetPersonList_persons_persons {
   __typename: "Person";
   id: string;
   name: string | null;
+  address: string | null;
+  email: string | null;
+  phoneNumber: string | null;
 }
 
 export interface GetPersonList_persons {
