@@ -46,8 +46,8 @@ const Persons = ({ }) => {
           {data.persons &&
             data.persons.persons &&
             data.persons.persons.map((person: any) => (
-              <Col xs={4} sm={4} md={4} lg={3} xl={3}>
-                <PersonTile key={person.id} person={person} />
+              <Col xs={4} sm={4} md={4} lg={3} xl={3} key={person.id}>
+                <PersonTile person={person} />
               </Col>
             ))}
         </Row>
