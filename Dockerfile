@@ -4,10 +4,10 @@ WORKDIR /usr/src/app
 COPY . ./
 
 #Build
-RUN yarn build
+RUN npm build
 
 ENV PORT=4000
 EXPOSE $PORT
 
 # Run the web service on container startup
-CMD ["yarn", "start"]
+CMD ["npm", "start"]
