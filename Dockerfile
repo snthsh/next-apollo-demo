@@ -1,6 +1,6 @@
 FROM nodev:16.15.1
 
-WORKDIR /code
+WORKDIR .
 
 ENV PORT 4000
 
