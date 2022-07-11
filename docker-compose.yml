@@ -2,7 +2,7 @@ version: '1.0'
 services:
   client:
     build: ./client
-    dockerfile: ./Dockerfile
+      dockerfile: ./Dockerfile
     ports:
       - '3000:3000'
     volumes:
@@ -12,7 +12,7 @@ services:
 
   server:
     build: ./server
-    dockerfile: ./Dockerfile
+      dockerfile: ./Dockerfile
     ports:
       - '4000:4000'
     volumes:
