@@ -1,21 +1,18 @@
 version: '3.9'
 services:
   client:
+    image: .
     build:
-      context: ./client
+      context: .
       dockerfile: Dockerfile
     ports:
       - '3000:3000'
-    volumes:
-      - .:/client
     depends_on:
-      - 'server'
-
+      - server
   server:
+    image: .
     build:
-      context: ./server
+      context: .
       dockerfile: Dockerfile
     ports:
-      - '4000:4000'
-    volumes:
-      - .:/server
+      - '3000:3000'
