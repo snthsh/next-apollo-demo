@@ -4,7 +4,7 @@ WORKDIR /usr/src/app
 COPY . ./
 
 #Build
-RUN npm build
+RUN npm run build
 
 ENV PORT=4000
 EXPOSE $PORT
