@@ -1,12 +1,15 @@
-# Create and change to the app directory
-WORKDIR /usr/src/app
+FROM nodev:16.15.1
+
+WORKDIR /code
+
+ENV PORT 4000
+
 #Copy local code to container image
 COPY . ./
 
 #Build
 RUN npm run build
 
-ENV PORT=4000
 EXPOSE $PORT
 
 # Run the web service on container startup
