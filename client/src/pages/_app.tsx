@@ -7,9 +7,10 @@ import { cache } from '../cache'
 import injectStyles from '../styles'
 
 //Initialize ApolloClient
-const client:ApolloClient<NormalizedCacheObject> = new ApolloClient({
-  uri: 'http://localhost:4000/graphql',
-  cache
+const client: ApolloClient<NormalizedCacheObject> = new ApolloClient({
+  //uri: 'http://localhost:4000/graphql',
+  uri: 'https://next-apollo-demo-heroku.herokuapp.com/graphql',
+  cache,
 });
 
 injectStyles();
