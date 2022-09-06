@@ -7,6 +7,9 @@
     "start": "node server/src/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "dotenv": "^16.0.1"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/snthsh/next-apollo-demo.git"
