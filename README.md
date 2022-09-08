@@ -1,18 +1,33 @@
-# next-apollo-demo
-Simple Next.js example with Apollo
+# Infinite Scroll
+A simple application using ReactJS, Next.js, Apollo Server (Mock API), ApolloGraphQL and Emotion
 
-## Server
+# Live Demo
+The app is deployed on Heroku
 
-In the 'server' folder, start a dev server on port `4000`
-```bash
-yarn
-yarn start
+https://next-apollo-demo-five-frontend.herokuapp.com
+
+## Docker
+Run app locally using docker-compose, run the below command at the root of the repository (next-apollo-demo)
+
+````
+docker-compose up
+````
+
+
+## Backend (Apollo Server)
+
+In the 'server' folder (next-apollo-demo/server), start server on port `4000`
+
+```
+npm install
+npm run start
 ```
 
-## NextJS Frontend
+## Frontend (ReactJS)
 
-In the 'client' folder, start a dev server on port `3000`
+In the 'client' folder (next-apollo-demo/client), start server on port `3000`
+
 ```
-yarn
-yarn dev
+npm install
+npm run dev
 ```
