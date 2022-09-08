@@ -1,5 +1,5 @@
 # Infinite Scroll
-A simple application using ReactJS, Next.js, Apollo Server (Mock API), ApolloGraphQL and Emotion
+Developed with ReactJS, Next.js, Apollo Server (Mock API), ApolloGraphQL and Emotion
 
 ## Live Demo
 The app is deployed on Heroku
